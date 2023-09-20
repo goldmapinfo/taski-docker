@@ -179,7 +179,6 @@ jobs:
         # которые нужно выполнить на сервере
         script: |
           cd taski
-          # Выполняет pull образов с Docker Hub
           sudo docker compose -f docker-compose.production.yml pull
           sudo docker compose -f docker-compose.production.yml down
           sudo docker compose -f docker-compose.production.yml up -d
